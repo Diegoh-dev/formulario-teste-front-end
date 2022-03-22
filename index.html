@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <header>
+        <h2>
+          Formulário <br />
+          para compra de <br />
+          <strong>Pacote de adesivos</strong>
+        </h2>
+      </header>
+
+      <form class="form">
+        <div class="form-control">
+          <div class="label-info">
+            <label for="adesivos">Quais adesivos:</label>
+          </div>
+          <div>
+            <input type="checkbox" id="react" name="react" />
+            <label for="react">React</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="vue" name="vue" />
+            <label for="vue">Vue</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="angular" name="angular" />
+            <label for="angular">Angular</label>
+          </div>
+
+          <div class="amount">
+            <label for="">Quantos adesivos de cada?</label>
+
+            <div class="gap">
+              <span id="plus" class="plus">+</span>
+              <div id="input">0</div>
+              <span id="minus" class="minus">-</span>
+            </div>
+          </div>
+          <div class="msg">
+            <label for="observacao">Observações:</label>
+            <textarea
+              name=""
+              id="observacao"
+              placeholder="Alguma dúvida? Recado?"
+            ></textarea>
+          </div>
+        </div>
+        <!--form-control-->
+        <footer class="footer-btn">
+          <button type="submit">Enviar</button>
+        </footer>
+      </form>
+    </div>
+    <!--conteiner-->
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

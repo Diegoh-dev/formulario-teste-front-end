@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8a2be2;
+
+  .conteiner {
+    width: 400px;
+    -webkit-box-shadow: 1px 1px 12px 3px rgba(0, 0, 0, 0.69);
+    box-shadow: 1px 1px 12px 3px rgba(0, 0, 0, 0.69);
+    background-color: #fcfcfc;
+    border-radius: 10px;
+
+    header {
+      background-color: #2f3675;
+      height: 150px;
+      border-bottom-left-radius: 45%;
+      border-bottom-right-radius: 60%;
+      padding: 15px;
+      h2 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: normal;
+      }
+    }
+
+    .form {
+      .form-control {
+        padding: 15px;
+        .label-info {
+          margin-bottom: 10px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .amount {
+          margin-top: 10px;
+
+          label {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            display: block;
+          }
+
+          .plus,
+          .minus {
+            width: 30px;
+            background-color: #2f3676;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+          }
+
+          .gap {
+            display: flex;
+            gap: 20px;
+
+            #input {
+              width: 60px;
+              text-align: center;
+              border: 1px solid #2f3675;
+              border-radius: 10px;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .msg {
+          margin-top: 20px;
+          label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          textarea {
+            width: 100%;
+            height: 150px;
+            border: 1px solid #2f3675;
+            border-radius: 10px;
+            background-color: #dde3e9;
+            padding: 10px;
+            font-size: 16px;
+          }
+        }
+        input[type="checkbox"] {
+          margin-bottom: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.footer-btn {
+  margin-top: 8px;
+  background-color: #dce3e8;
+  height: 80px;
+  overflow: hidden;
+  text-align: center;
+
+  button {
+    margin-top: 20px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: #2f3675;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
